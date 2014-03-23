@@ -834,10 +834,10 @@ class RoomGeneratorPanel(bpy.types.Panel):
             row.prop(room,'inverse')
 
             row = layout.row()
-            row.prop(room,'ceiling')
-            row.prop(room,'floor')
             if room.wall_num > 1:
                 row.prop(room,'merge')
+                row.prop(room,'ceiling')
+                row.prop(room,'floor')
 
             # Wall number
             row = layout.row()
